@@ -30,7 +30,7 @@ function hide(id) {
           [
             {
               number: 1,
-              ask: '<h3>Statista</h3><a class="example-image-link target" href="img/statista.png" data-lightbox="example-1"><img class="example-image" src="img/statista.png" alt="image-1" /></a>',
+              ask: '<h3>Statista</h3><a class="example-image-link target" href="img/Statista.png" data-lightbox="example-1"><img class="example-image" src="img/Statista.png" alt="image-1" /></a>',
             },
             {
               number: 2,
