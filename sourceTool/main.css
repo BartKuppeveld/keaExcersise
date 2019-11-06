@@ -1,0 +1,256 @@
+html{
+  margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+
+*{
+  -ms-overflow-style: none;  
+  overflow: -moz-scrollbars-none; 
+}
+*::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Add some margin to the page and set a default font and colour */
+#div1, #div2, #div3 {  
+  visibility: hidden;  
+}
+.bar{
+  width: 100%;
+  height: 15%;
+  background-color: #F37959;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+  background-color: #f6cc3d;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 65px;
+  height: 65px;
+  border: none;
+  float: right;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #f6cc3d;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  color: white;
+    padding: 0 18px;
+    height: 0px;
+    background-color: #f8d255;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+    transition: height 0.2s ease-out;
+  
+} 
+.circle{
+  bottom: -120px;
+  right: 100px;
+  z-index: -99;
+  height: 405px;
+  width: 405px;
+  border-bottom: 100px solid rgba(243, 121, 89, 0.5);
+  border-right: 100px solid transparent;
+  display: inline-block;
+  position: fixed;
+}
+
+.circle2{
+  top: -420px;
+  left: -300px;
+  z-index: -99;
+  height: 805px;
+  width: 805px;
+  background-color: rgba(240, 243, 89, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  
+}
+
+
+body {
+
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  }
+   
+  /* Give headings their own font */
+   
+  h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+  }
+h3{
+  
+  padding: 2px;
+}
+
+#typeMark{
+  top: 0;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  margin-top: 50px; 
+  position: fixed;
+  background: #f6cc3d;
+  padding: 10px;
+  z-index: 99;
+}
+#typeMark img{
+  height: 40%;
+  margin: 10px;
+}
+  /* Main content area */
+   *{
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+   }
+
+
+   
+  /* Slots for final card positions */
+   
+  #cardSlots {
+    
+    width: 650px;
+    background-image: url("background1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+  }
+   
+  /* The initial pile of unsorted cards */
+   
+  #cardPile {
+    margin: 0;
+    float: left;
+
+  }
+     #cardslots{
+    background-image: url("background.png");
+  }
+  #cardSlots, #cardPile {
+    width: 47%;
+    height: 600px;
+    margin: 20px;
+  }
+
+   
+  /* Individual cards and slots */
+   
+  #cardPile div {
+    float: left;
+    width: 23%;
+    height: auto;
+    padding: .85em;
+    padding-bottom: 0;
+    margin: 10px 0 0 10px;
+  }
+
+  #cardSlots div{
+    float: left;
+    width: 700px;
+    height: 195px;;
+    overflow: scroll;
+  }
+  #cardPile a{
+    font-size: 10pt;
+    line-height: 0;
+  }
+  /*#cardSlots div:first-child, #cardPile div:first-child {
+    margin-left: 0;
+  }*/
+   
+  #cardSlots div.hovered {
+    background: rgba(15, 216, 216, 0.596);
+  }
+   
+  #cardSlots div {
+    
+    color: #fff;
+    height: 195px;
+    width: 676px;
+    font-size: 1em;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+  }
+  
+  #cardSlots div::-webkit-scrollbar  {
+ display: none;
+  }
+   
+  #cardPile div {
+    bottom: 0;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+    height: 140px;
+    left: 0;
+    margin: 10px;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    width: 80px;
+    background-color: white;  
+  }
+
+  #cardPile div img{
+    width: 60px;
+  }
+   
+  #cardPile div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  }
+   
+  /* Individually coloured cards */
+   
+  #card1.correct { background: #333; }
+  #card2.correct { background: #333; }
+  #card3.correct { background: #333; }
+  #card4.correct { background: #333; }
+  #card5.correct { background: #333; }
+  #card6.correct { background: #333; }
+  #card7.correct { background: #333; }
+  #card8.correct { background: #333; }
+  #card9.correct { background: #333; }
+  #card10.correct { background: #333; }
+   
+   
+  /* "You did it!" message */
+  #successMessage {
+    position: absolute;
+    left: 580px;
+    top: 250px;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    background: #dfd;
+    border: 2px solid #333;
+    padding: 20px;
+  }
+

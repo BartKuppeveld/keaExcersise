@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+
+        <title>Source criticizing</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="lightbox.css">
+        <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
+        <script type="text/javascript" src="lightbox-plus-jquery.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="main.js"></script>
+        <script src="html2canvas.js"></script>
+        
+        
+    
+        </head>
+        <body>
+          
+          <div class="circle"></div>
+          <div class="circle2"></div>
+          <button type="button" class="collapsible"><i class="fas fa-info-circle"></i></button>
+          <div class="content">
+              <p>
+                  By clicking on a source, you can find a more closed up version of the source.<br>
+                  You can drag and drop different sources in different categories.
+              </p>
+          </div> 
+        <div id="container">
+          <div id="cardPile"> </div>
+          <div id="cardSlots"> </div>
+        </div>
+          <div id="successMessage">
+            <h2>Congratulations!</h2>
+            <button onclick="init()">Play Again</button>
+
+         </div>
+
+
+
+
+          <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+      content.style.height =  null;
+      content.style.padding = null;
+    } else {
+      content.style.maxHeight =  "65px";
+      content.style.height =  "33px";
+      content.style.padding = "16px";
+    }
+  });
+}
+
+</script>
+
+</body>
+</html>
+
+        
+       
