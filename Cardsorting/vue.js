@@ -122,7 +122,7 @@ function hide(id) {
             
             ui.draggable.draggable( 'option', 'revert', false );
             correctCards++;
-            alert(correctCards);
+  
           } 
           
           // If all the cards have been placed correctly then display a message
