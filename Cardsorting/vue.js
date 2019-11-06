@@ -110,7 +110,7 @@ function hide(id) {
         function handleCardDrop( event, ui ) {
           var slotNumber = $(this).data( 'number' );
           var cardNumber = ui.draggable.data( 'number' );
-          $(this).droppable( 'disable' );
+         
           // If the card was dropped to the correct slot,
           // change the card colour, position it directly
           // on top of the slot, and prevent it being dragged
@@ -118,7 +118,7 @@ function hide(id) {
         
           if ( slotNumber == cardNumber ) {
 
-           
+            $(this).droppable( 'disable' );
             
             ui.draggable.draggable( 'option', 'revert', false );
             correctCards++;
