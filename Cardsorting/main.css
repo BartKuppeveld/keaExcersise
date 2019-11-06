@@ -166,7 +166,7 @@ body {
     width: 0;
     height: 0;
     z-index: 100;
-    background: #dfd;
+    background: #fff;
     padding: 20px;
   }
   .modalDialog {
