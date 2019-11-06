@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+
+        <title>Card sorting stuff</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="lightbox.css">
+        <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
+        <script type="text/javascript" src="lightbox-plus-jquery.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+    
+    
+        </head>
+        <body>
+         
+        <div id="content">
+            <div id="openModal1" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <p>Chefen har bedt jer finde statistik om power tools. Det skal være fra hele verden og vise både noget om forbrugerne, markedet og prognose for de næste års udvikling.</p>
+                </div>
+             </div>
+             <div id="openModal2" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <p>Jeres arbejdsgiver er interesseret i at vide noget om den samlede danske eksportomsætning indenfor maskinindustrien fra de sidste 5 år, og han har derfor spurgt jer om I ikke kan finde tallene frem.  </p>
+                </div>
+             </div>
+             <div id="openModal3" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+      
+                    <p>I er i gang med sidste udviklingsfase af en ny produktionsmaskine, og har nu brug for den helt rigtige leverandør af gas før den sendes på markedet. I har arbejdet hårdt på projektet, og vil ikke gå på kompromis med noget så banalt som drivmidlet til jeres geniale produkt. I har derfor besluttet jer for at researche grundigt for at finde den bedste samarbejdspartner.  </p>
+                </div>
+             </div>
+             <div id="openModal4" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+             
+                    <p>Som en del af jeres researchproces vil I undersøge hvordan mediedækningen har været af jeres samarbejdspartner. I er både interesseret i positiv og negativ omtale, da det hele er med til at give et helhedsbillede. </p>
+                </div>
+             </div>
+             <div id="openModal5" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+           
+                    <p>Jeres samarbejdspartner er bekymret for, om jeres produkt overholder gældende standarder og krav.  </p>
+                 </div>
+             </div>
+             <div id="openModal6" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+               
+                    <p>Jeres nærmeste konkurrent har outsourcet produktionen og I overvejer nu at gøre det samme, men i mangler information om, hvilke relevante udenlandske virksomheder der findes.  </p>
+                </div>
+             </div>
+             <div id="openModal7" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                 
+                    <p>I overvejer at starte egen virksomhed, og har i den forbindelse brug for en grundbog i virksomhedsøkonomi.  </p>
+                  </div>
+             </div>
+             <div id="openModal8" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+               
+                    <p>I skal bruge nogle billeder til jeres eksamenspræsentation.    </p>
+                              </div>
+             </div>
+             <div id="openModal9" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                 
+                    <p>I har fået et nyt program til rådighed på jeres studie, men I er usikker på hvordan det helt præcist virker.   </p>
+                         </div>
+             </div>
+
+          <div id="cardPile"> </div>
+          <div id="cardSlots"> </div>
+        
+          <div id="successMessage">
+            <h2>Congratulations!</h2>
+            <button onclick="init()">Play Again</button>
+          </div>
+        
+        </div>
+        <script type="text/javascript" src="vue.js"></script>
+        </body>
+        </html>

@@ -1,0 +1,217 @@
+/* Add some margin to the page and set a default font and colour */
+#div1, #div2, #div3 {  
+  visibility: hidden;  
+}
+body {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+    font-family:  'Roboto', sans-serif;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  html{
+    margin: 0px;
+     min-height: 100%;
+     width: 100%;
+  }
+  
+  *{
+    -ms-overflow-style: none;  
+    overflow: -moz-scrollbars-none; 
+  }
+  *::-webkit-scrollbar {
+    display: none; 
+  }
+   *{
+     text-decoration: none;
+   }
+   a{
+     color: black;
+   }
+  /* Give headings their own font */
+   
+  h1, h2, h3, h4 {
+    font-family:  'Roboto', sans-serif;
+    margin-top: 5px;
+    top: 5px;
+    color: #34c29e;
+    position: relative;
+    display: block;
+    font-weight: 400;
+    font-size: 100%;
+    margin-bottom: 30px;
+  }
+   
+  /* Main content area */
+   
+  #content {
+    margin: 5px;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+   
+  /* Slots for final card positions */
+   
+  #cardSlots {
+    
+    margin: 0 auto 3em auto;
+    float: right;
+  }
+   
+  /* The initial pile of unsorted cards */
+   
+  #cardPile {
+    margin: 0 auto;
+
+    float: left;
+  }
+  #cardPile img{
+    width: 100%;
+    margin: 0;
+  }
+  #cardSlots{
+    width: 70%;
+    height: 80%;
+  }
+  #cardPile {
+    width: 30%;
+    height: 80%;
+  }
+  /* Individual cards and slots */
+   
+  #cardSlots div, #cardPile div {
+    float: left;
+    width: 43%;
+    height: 18%;
+    padding: .85em;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 10px 0 0 10px;
+    background: #fff;
+   
+  
+  }
+
+  /*#cardSlots div:first-child, #cardPile div:first-child {
+    margin-left: 0;
+  }*/
+   
+  #cardSlots div.hovered {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  #cardSlots div {
+    display: block;
+    color: black;
+    height: 220px;
+    width: 240px;
+    font-size: 1em;
+    text-align: center;
+    -moz-box-shadow: 0 0 .2em rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 .2em rgba(0, 0, 0, .3);
+    box-shadow: 0 0 .2em rgba(0, 0, 0, .3);
+  }
+   
+  #cardPile div {
+    background: white;
+    color: #000;
+    height: 150px;
+    width: 80px;
+    font-size: 1em;
+    text-align: center;
+    -moz-box-shadow: 0 0 .2em rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 .2em rgba(0, 0, 0, .3);
+    box-shadow: 0 0 .2em rgba(0, 0, 0, .3);
+  }
+   
+  #cardPile div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  }
+   
+  /* Individually coloured cards */
+   
+  #card1.correct { background: #333; }
+  #card2.correct { background: #333; }
+  #card3.correct { background: #333; }
+  #card4.correct { background: #333; }
+  #card5.correct { background: #333; }
+  #card6.correct { background: #333; }
+  #card7.correct { background: #333; }
+  #card8.correct { background: #333; }
+  #card9.correct { background: #333; }
+  #card10.correct { background: #333; }
+   
+   
+  /* "You did it!" message */
+  #successMessage {
+    position: absolute;
+    left: 580px;
+    top: 250px;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    background: #dfd;
+    padding: 20px;
+  }
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+
+}
+
+.close {
+    background: white;
+    color: #34c29e;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
