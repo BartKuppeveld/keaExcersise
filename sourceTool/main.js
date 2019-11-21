@@ -55,7 +55,7 @@ function hide(id) {
             }
             
           ];
-          var globalAmount = 6;
+          var globalAmount = 5;
           
 
               

@@ -1,6 +1,6 @@
 html{
   margin: 0px;
-   min-height: 100%;
+   min-height: 100rem;
    width: 100%;
 }
 
@@ -12,6 +12,28 @@ html{
   display: none; 
 }
 
+h1{
+  color: white;
+  margin: 100px;
+}
+h2{
+  color: white;
+
+}
+#title{
+  padding: 10px;
+  width: 100rem;
+  height: 30px;
+  background-color: rgba(243, 121, 89, 0.5);
+}
+#warning{
+  width: 100rem;
+  height: 100em;
+background-color: #f6cc3d;
+position: absolute;
+visibility: hidden;
+z-index: 9999999;
+}
 /* Add some margin to the page and set a default font and colour */
 #div1, #div2, #div3 {  
   visibility: hidden;  
@@ -47,6 +69,7 @@ html{
 /* Style the collapsible content. Note: hidden by default */
 .content {
   color: white;
+
     padding: 0 18px;
     height: 0px;
     background-color: #f8d255;
@@ -91,7 +114,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   margin: 0px;
-  min-height: 100%;
+  min-height: 100rem;
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -135,11 +158,11 @@ h3{
    
   #cardSlots {
     
-    width: 650px;
+    height: 100%;
     background-image: url("background1.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    float: left;
+    background-size: 600px auto, cover;
+    float: right;
   }
    
   /* The initial pile of unsorted cards */
@@ -154,10 +177,12 @@ h3{
   }
   #cardSlots, #cardPile {
     width: 47%;
-    height: 600px;
+    height: 500px;
     margin: 20px;
   }
-
+#cardSlots{
+  width: 44%;
+}
    
   /* Individual cards and slots */
    
@@ -172,8 +197,8 @@ h3{
 
   #cardSlots div{
     float: left;
-    width: 700px;
-    height: 195px;;
+    width: 60%;
+    height: 172px;
     overflow: scroll;
   }
   #cardPile a{
@@ -191,8 +216,8 @@ h3{
   #cardSlots div {
     
     color: #fff;
-    height: 195px;
-    width: 676px;
+    height: calc(100/3);
+    width:70%;
     font-size: 1em;
     text-shadow: 0 0 3px #000;
     text-align: center;
@@ -254,3 +279,16 @@ h3{
     padding: 20px;
   }
 
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  #warning{
+    visibility: visible;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  #warning{
+    visibility: visible;
+  }
+}
