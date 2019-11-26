@@ -19,7 +19,7 @@ function hide(id) {
             height: 0,
             width: 0
           } );
-        
+        $('#content').show();
           // Reset the game
           correctCards = 0;
           $('#cardPile').html( '' );
@@ -129,6 +129,7 @@ function hide(id) {
           // and reset the cards for another go
         
           if ( correctCards == totalCards ) {
+            $('#content').hide();
             $('#successMessage').show();
             $('#successMessage').animate( {
               left: '0',
@@ -137,10 +138,6 @@ function hide(id) {
               height: '100%',
               opacity: 1
             } );
-            $('#background').animate({
-                display: 'block'
-              }
-            );
           
         
         }}

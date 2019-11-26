@@ -65,6 +65,7 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    display: block;
   }
 
    
@@ -295,6 +296,20 @@ position:relative;
   position: fixed;
   
 }
+
+.circle3{
+  bottom: 20px;
+  right: 20px;
+  z-index: -99;
+  height: 305px;
+  width: 305px;
+  background-color: rgba(94, 175, 188, 1);
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  
+}
+
 #background{
   z-index: -1;
 }
@@ -329,7 +344,7 @@ position:relative;
   width: 5px;
   height: 0px;
 	will-change: transform;
-	transform: translateY(1000px);
+	transform: translateY(300px);
 	animation: fireworkstart 3s ease-out infinite;
 	
 }
@@ -397,7 +412,7 @@ position:relative;
 @keyframes fireworkstart{
 	0%{
 		height: 0px;
-		transform: translateY(200px);
+		transform: translateY(100%/3);
 	}
 	50%{
 		height: 50px;

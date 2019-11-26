@@ -16,8 +16,11 @@
         </head>
         <body>
 
-           <div class="circle"></div>
+           
+        <div id="content">
+            <div class="circle"></div>
             <div class="circle2"></div>
+            <div class="circle3"></div>
             <button type="button" class="collapsible"><i class="fa fa-info"></i></button>
             <div class="content">
                 <p>
@@ -26,7 +29,6 @@
                     <a target="_blank"href="https://Bibliotek.kea.dk">Bibliotek</a>
                 </p>
             </div> 
-        <div id="content">
             <div id="openModal1" class="modalDialog">
                 <div>
                     <a href="#close" title="Close" class="close">X</a>
@@ -94,7 +96,7 @@
             </header>
           <div id="cardPile"> </div>
           <div id="cardSlots"> </div>
-     
+        </div>
           <div id="successMessage">
               <div id="background">
                   <div class="fireworks">
@@ -177,7 +179,7 @@
             <button onclick="init()">Play Again</button>
           </div>
         </div>
-        </div>
+        
  
         <script>
             var coll = document.getElementsByClassName("collapsible");
