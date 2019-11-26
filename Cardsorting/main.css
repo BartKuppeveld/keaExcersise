@@ -67,6 +67,7 @@ body {
     user-select: none;
     display: block;
     z-index: -1;
+    margin: 15px;
   }
 
    
@@ -251,6 +252,9 @@ position:relative;
   text-align: center;
   outline: none;
   font-size: 15px;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -260,6 +264,8 @@ position:relative;
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
+  position: fixed;
+  top: 0;
   color: white;
     padding: 0 18px;
     height: 0px;

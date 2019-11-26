@@ -15,13 +15,11 @@
     
         </head>
         <body>
-
-           
-        <div id="content">
-            <div class="circle"></div>
-            <div class="circle2"></div>
-            <div class="circle3"></div>
-            <button type="button" class="collapsible"><i class="fa fa-info"></i></button>
+            <header><h1>Introduction</h1>
+              <p>Kortene til venste repræsenterer databaser du har adgang til gennem biblioteket. For at læse mere om den enkelte database, kan du besøge bibliotekets digitale samling på <a href="https://bibliotek.kea.dk"><strong>bibliotek.kea.dk</strong></a> <br><br>
+                  <strong>Opgave: Placer (drag-and-drop) hvert database-kort på det relevante spørgsmål til højre. Først når alle kort er placeret korrekt, giver systemet dig besked.</strong></p>
+              </header>
+              <button type="button" class="collapsible"><i class="fa fa-info"></i></button>
             <div class="content">
                 <p>
                     Siden skal benyttes fra en computer. Drag-and-drop funktionaliteten virker ikke på telefoner og tablets.
@@ -29,6 +27,12 @@
                     <a target="_blank"href="https://Bibliotek.kea.dk">Bibliotek</a>
                 </p>
             </div> 
+           
+        <div id="content">
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            
             <div id="openModal1" class="modalDialog">
                 <div>
                     <a href="#close" title="Close" class="close">X</a>
@@ -90,10 +94,7 @@
                     <p>I har fået et nyt program til rådighed på jeres studie, men I er usikker på hvordan det helt præcist virker.   </p>
                          </div>
              </div>
-             <header><h1>Introduction</h1>
-            <p>Kortene til venste repræsenterer databaser du har adgang til gennem biblioteket. For at læse mere om den enkelte database, kan du besøge bibliotekets digitale samling på <a href="https://bibliotek.kea.dk"><strong>bibliotek.kea.dk</strong></a> <br><br>
-                <strong>Opgave: Placer (drag-and-drop) hvert database-kort på det relevante spørgsmål til højre. Først når alle kort er placeret korrekt, giver systemet dig besked.</strong></p>
-            </header>
+             
           <div id="cardPile"> </div>
           <div id="cardSlots"> </div>
         </div>
@@ -203,7 +204,7 @@
             
             </script>
             <div id="warning"><h2>Please switch to a desktop <br>to perform this excersise.</h2></div>
-        <script type="text/javascript" src="vue.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="fireworks.js"></script>
         </body>
         </html>
