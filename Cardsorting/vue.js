@@ -5,7 +5,7 @@ function hide(id) {
   document.getElementById(id).style.visibility = "hidden";
 };
 
-  var totalCards = 9
+  var totalCards = 9;
   var correctCards = 0;
         $( init );
         
@@ -14,10 +14,10 @@ function hide(id) {
           // Hide the success message
           $('#successMessage').hide();
           $('#successMessage').css( {
-            left: '580px',
-            top: '250px',
-            width: 0,
-            height: 0
+            left: '0',
+            top: '0',
+            height: 0,
+            width: 0
           } );
         
           // Reset the game
@@ -30,39 +30,39 @@ function hide(id) {
           [
             {
               number: 1,
-              ask: '<h3>Statista</h3><a class="example-image-link target" href="img/Statista.png" data-lightbox="example-1"><img class="example-image" src="img/Statista.png" alt="image-1" /></a>',
+              ask: '<h3>Statista</h3><img class="example-image" src="img/Statista.png" alt="image-1" />',
             },
             {
               number: 2,
-              ask: '<h3>Statistik-banken</h3><a class="example-image-link target" href="img/statistikbanken.jpg" data-lightbox="example-1"><img class="example-image" src="img/statistikbanken.jpg" alt="image-1" /></a>',
+              ask: '<h3>Statistik-banken</h3><img class="example-image" src="img/statistikbanken.jpg" alt="image-1" /></a>',
             },
             {
               number: 3,
-              ask: '<h3>Bisnode</h3><a class="example-image-link target" href="img/bisnode.svg" data-lightbox="example-1"><img class="example-image" src="img/bisnode.svg" alt="image-1" /></a>',
+              ask: '<h3>Bisnode</h3><img class="example-image" src="img/bisnode.svg" alt="image-1" /></a>',
             },
             {
               number: 4,
-              ask: '<h3>Infomedia</h3><a class="example-image-link target" href="img/infomedia.jpg" data-lightbox="example-1"><img class="example-image" src="img/infomedia.jpg" alt="image-1" /></a>',
+              ask: '<h3>Infomedia</h3><img class="example-image" src="img/infomedia.jpg" alt="image-1" /></a>',
             },
             {
               number: 5,
-              ask: '<h3>Dansk Standard</h3><a class="example-image-link target" href="img/dansk_standard.png" data-lightbox="example-1"><img class="example-image" src="img/dansk_standard.png" alt="image-1" /></a>',
+              ask: '<h3>Dansk Standard</h3><img class="example-image" src="img/dansk_standard.png" alt="image-1" /></a>',
             },
             {
               number: 6,
-              ask: '<h3>Kompass</h3><a class="example-image-link target" href="img/kompass.png" data-lightbox="example-1"><img class="example-image" src="img/kompass.png" alt="image-1" /></a>',
+              ask: '<h3>Kompass</h3><img class="example-image" src="img/kompass.png" alt="image-1" /></a>',
             },
             {
               number: 7,
-              ask: '<h3>Bibliotekets database</h3><a class="example-image-link target" href="img/kea_logo.png" data-lightbox="example-1"><img class="example-image" src="img/kea_logo.png" alt="image-1" /></a>',
+              ask: '<h3>Bibliotekets database</h3><img class="example-image" src="img/kea_logo.png" alt="image-1" /></a>',
             },
             {
               number: 8,
-              ask: '<h3>Colourbox</h3><a class="example-image-link target" href="img/colourbox.svg" data-lightbox="example-1"><img class="example-image" src="img/colourbox.svg" alt="image-1" /></a>',
+              ask: '<h3>Colourbox</h3><img class="example-image" src="img/colourbox.svg" alt="image-1" /></a>',
             },
             {
               number: 9,
-              ask: '<h3>LinkedIn Learning</h3><a class="example-image-link target" href="img/linkedin_learning.png" data-lightbox="example-1"><img class="example-image" src="img/linkedin_learning.png" alt="image-1" /></a>',
+              ask: '<h3>LinkedIn Learning</h3><img class="example-image" src="img/linkedin_learning.png" alt="image-1" /></a>',
             },
             
           ];
@@ -131,14 +131,22 @@ function hide(id) {
           if ( correctCards == totalCards ) {
             $('#successMessage').show();
             $('#successMessage').animate( {
-              left: '380px',
-              top: '200px',
-              width: '400px',
-              height: '100px',
+              left: '0',
+              top: '0',
+              width: '100%',
+              height: '100%',
               opacity: 1
             } );
-          }
+            $('#background').animate({
+                display: 'block'
+              }
+            );
+          
         
-        }
+        }}
         // Get the modal
+    
+
+
+        
 
