@@ -214,10 +214,9 @@ h3{
   }
    
   #cardSlots div {
-    
     color: #fff;
     height: calc(100/3);
-    width:95%;
+    width:600px;
     font-size: 1em;
     text-shadow: 0 0 3px #000;
     text-align: center;
